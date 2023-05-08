@@ -34,7 +34,7 @@ const medias = {
     processVideo();
   
     function processVideo() {
-    //   try{
+      try{
         const begin = Date.now();
   
         if(width != video.clientWidth || height != video.clientHeight){
@@ -52,11 +52,10 @@ const medias = {
             delay = 0;
         }
         setTimeout(processVideo, delay);
-        // processVideo();
         
-    //   }catch(e){
-    //     location.reload();
-    //   }
+      }catch(e){
+        location.reload();
+      }
     }
   }
   
